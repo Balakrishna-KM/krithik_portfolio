@@ -1,0 +1,11 @@
+.se { position: relative; height: calc(var(--se-total) * 100vh); height: calc(var(--se-total) * 100svh); }
+.se-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
+.se-media { position: absolute; inset: 0; background: #140a0a; will-change: clip-path; }
+.se-inner { position: absolute; inset: 0; will-change: transform; }
+.se-inner video, .se-inner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.se-ph { width: 100%; height: 100%; display: grid; place-content: center; text-align: center; color: #d3c7bd; background: linear-gradient(135deg, #140a0a, #a9744a33 55%, #b5524b33); }
+.se-ph small { opacity: .6; }
+.se-scrim { position: absolute; inset: 0; background: #0a0606; opacity: 0; pointer-events: none; }
+.se-title { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 0 8vw; pointer-events: none; font: 800 clamp(1.4rem, 4vw, 3.4rem)/1.05 'Syne', sans-serif; letter-spacing: -.01em; text-shadow: 0 4px 40px #000; }
+.se-hint { position: absolute; bottom: 4vh; left: 50%; transform: translateX(-50%); font-size: .72rem; letter-spacing: .32em; color: #d3c7bd; pointer-events: none; white-space: nowrap; }
+.se-overlay { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 1.6rem; text-align: center; padding: 0 6vw; opacity: 0; pointer-events: none; }

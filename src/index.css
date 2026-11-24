@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { background: #0a0606; }
+  body {
+    @apply bg-obsidian font-body text-white antialiased overflow-x-hidden;
+  }
+  :focus-visible { outline: 2px solid #b5524b; outline-offset: 3px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
